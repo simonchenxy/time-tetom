@@ -1,3 +1,4 @@
+
 @font-face { 
   font-family: 'Didot-HTF-L42-Light-Ital';
   src: url(../fonts/Didot-HTF-L42-Light-Ital.otf);
@@ -12,10 +13,8 @@
 } 
 
 
-body{font-family: '华文细黑','方正宋一简体','方正小标宋简体','方正宋一繁体','Didot-HTF-L42-Light-Ital','FELIXTI','Didot-HTF-L42-Light';}
+body{font-family:'Didot-HTF-L42-Light-Ital','FELIXTI','Didot-HTF-L42-Light';}
 .font-family1{}
-.font-family2{font-family: '方正小标宋简体';}
-.font-family3{font-family: '方正宋一繁体';}
 .font-family4{font-family: 'Didot-HTF-L42-Light-Ital';}
 .font-family5{font-family: 'FELIXTI';}
 .font-family6{font-family: 'Didot-HTF-L42-Light';}
