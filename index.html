@@ -1,0 +1,578 @@
+<html lang="zh">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="摄像,摄影,婚纱,影视,婚礼跟拍"/><!-- 搜索网站的关键字 可按格式自己添加-->
+	<meta name="description" content="" /><!-- 关于网站的一些描述，用于搜索 -->
+	<link rel="shortcut icon" href="img/logo-icon.ico"/>
+	<title>Time Totem - 时光图腾文化传媒</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css"><!-- 全局css定义，可做适当修改 -->
+	<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/mousewheel.js"></script>
+	<script type="text/javascript">
+
+	$(function(){
+
+
+		$(".view").each(function(i,obj){
+	   		$(obj).click(function(){
+	   			$("div.video-bg,.video-item").fadeIn();
+	   			var h3Content = ["早道广告合集","诚健集团","成者科技京东众筹","音酷比MG动画"];
+	   			var urlContent = ["http://player.youku.com/embed/XMTM5MDMwMDU1Ng==","http://player.youku.com/embed/XMTM5MDI4MzY1Mg==","http://player.youku.com/embed/XODA3OTEwNzE2","http://player.youku.com/embed/XOTIwMzgzNTI4"];
+	       	 	$(".video-item .video-title h3").text(h3Content[i]);
+	       	 	$(".video-item .video-body iframe").attr("src",urlContent[i]);
+	    	});
+	    	
+	    	
+	    });
+		$(".glyphicon-remove,.video-bg").click(function(){
+			$("div.video-bg,div.video-item").fadeOut();
+			$(".video-item .video-title h3").text("");
+			$(".video-item .video-body iframe").attr("src","");
+		});
+
+	
+		$(".company-pic").mousewheel(function(){
+			$(this).slideUp();
+			return false;
+		});
+		$(".company-pic").click(function(){
+			$(this).slideUp();
+			
+		});
+
+
+
+
+		function addclass(e){
+			var win_h=$(window).height()*0.8;
+			var con_t = $(e).offset().top;
+			console.log(con_t);
+			var top=$(window).scrollTop();
+			if (top>con_t - win_h){
+				$(e).addClass("on");
+			}
+
+		};
+		$(window).scroll(function(e){
+			addclass(".can-1")
+			addclass(".can-2")
+			addclass(".can-3")
+			addclass(".can-4")
+			addclass(".process-1")
+			addclass(".process-2")
+			addclass(".process-3")
+			addclass(".process-4")
+			addclass(".process-5")
+			addclass(".process-6")
+		});
+		
+			
+	});
+
+	</script>
+	<style type="text/css">
+
+	.feature .carousel .carousel-inner .item .img-box div .listbox-btn{
+		color: #fff !important;
+  		text-decoration: initial !important;
+	}
+	</style>
+	
+
+</head>
+<body>
+<div class="video-item">
+	<div class="video-title">
+		<h3></h3>
+		<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+	</div>
+	<div class="video-body">
+		<iframe width=880 height=536 src="" frameborder=0 allowfullscreen></iframe>
+	</div>
+</div>
+<div class="company-pic">
+	<div class="company-top-item"></div>
+	<div class="company-name">
+		<div class="mouse" style="margin-top:250px;">
+		  <span class="mouse-down"></span>
+		</div>
+	</div>
+</div>
+<div id="head" style="display:none;"></div>
+<ul class="con-ul-1" style="display:none;">
+	<li>
+		<a href=""></a>
+	</li>
+	<li>
+		<a href=""></a>
+	</li>
+	<li>
+		<a href=""></a>
+	</li>
+	<li>
+		<a href=""></a>
+	</li>
+	<li>
+		<a href=""></a>
+	</li>
+</ul>
+<div class="overview">
+	<div class="container-fluid">
+		<div class="row top-nav">
+			<div class="col-md-3">
+				<div class="logo font-family3">映畫圍城 <span>Retlection of world</span> <br />時光圖騰 <span>Time and Totem</span></div>
+			</div>
+			<div class="col-md-6">
+				<div class="com-name font-family2">大连时光图腾文化传媒有限公司<br /><span>Dalian time totem culture media co.,Ltd.</span></div>
+			</div>
+			<div class="col-md-3">
+				<ul class="icon float-right">
+				<!-- 微博分享链接  http://service.weibo.com/share/share.php?appkey=&title=&url=&pic=&searchPic=false&style=simple -->
+					<li><a class="weibo" href="http://weibo.com/timeandtotem" target="_blank"></a></li><!-- 微博链接 -->
+					<li>
+						<a class="weixin" href="" onclick="return false;"></a><!-- 微信二维码 -->
+						<img src="img/wechat-code.jpg">
+						<script type="text/javascript">
+						   	$(".weixin").click(function(){
+						   		$(this).next().toggle();
+						   	});
+						  
+						</script>
+					</li>
+					<li><a class="youku" href="http://i.youku.com/shiguangtuteng" target="_blank"></a></li><!-- 优酷链接 -->
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+				<div data-offset="5" class="poster">
+					<div class="shine"></div>
+					<div data-offset="-2" class="layer-1"></div>
+					<div class="layer-2"></div>
+					<div data-offset="1" class="layer-3"></div>
+					<div data-offset="3" class="layer-4"></div>
+					<div data-offset="10" class="layer-5"></div>	
+				</div>
+				<script src="js/effect.js"></script>
+		</div>
+		<div class="row text-center row-nav"><!-- 首页底部导航条 -->
+			<div class="col-md-2 col-md-offset-1">
+				<a href="#tab2">
+					<b class="font-family2">·<br />作品展示</b> <br /><span class="font-family6">Works</span>
+				</a>
+			</div>
+			<div class="col-md-2">
+				<a href="#tab3">
+					<b class="font-family2">·<br />业务项目</b> <br /><span class="font-family6">Project</span>
+				</a>
+			</div>
+			<div class="col-md-2">
+			<br />
+				<div class="mouse">
+			      <span class="mouse-down"></span>
+			    </div>
+			</div>
+			<div class="col-md-2">
+				<a href="#tab4">
+					<b class="font-family2">·<br />合作品牌</b><br /><span class="font-family6">Cooperation Brand</span>
+				</a>
+			</div>
+			<div class="col-md-2">
+				<a href="#tab5">
+					<b class="font-family2">·<br />关于我们</b> <br /><span class="font-family6">About Us</span>
+				</a>
+			</div>
+		</div>
+		<div class="row mobile-nav"><!-- 屏幕宽度768px一下移动端导航状态栏 -->
+			<div class="col-sm-2">
+				<nav class="navbar-collapse" style="display:none;">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#tab2">
+								<b class="font-family2">作品展示</b><span class="font-family6">Works</span>
+							</a>
+						</li>
+						<li>
+							<a href="#tab3">
+								<b class="font-family2">业务项目</b><span class="font-family6">Project</span>
+							</a>
+						</li>
+						<li>
+							<a href="#tab4">
+								<b class="font-family2">合作品牌</b><span class="font-family6">Cooperation Brand</span>
+							</a>
+						</li>
+						<li>
+							<a href="#tab5">
+								<b class="font-family2">关于我们</b><span class="font-family6">About Us</span>
+							</a>
+						</li>
+					</ul>
+			    </nav>
+				<button class="navbar-toggle" style="margin: 0 auto;">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			 	<script type="text/javascript">
+					$(document).ready(function(){
+						$(".navbar-toggle").click(function(){
+					   		$(".navbar-collapse").slideToggle();
+					   	});
+					   	$(".navbar-collapse ul li a").click(function(){
+					   		$(".navbar-collapse").hide();
+					   	});
+					});
+				</script>
+			</div>
+			<div class="col-sm-2 col-sm-offset-3">
+				<div class="nav-down">
+					<a href="#tab2"><span style="font-size:30px;" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+<div class="feature space-bottom" id="tab2">
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<!-- 图片轮播按钮 -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="4"></li><!-- 图片轮播按钮，可叠加，复制整行，吧data-slide-to内值改成相应的数字，比如5 -->
+		</ol>
+
+		<!-- 轮播图片／内容文字 -->
+		
+
+		<div class="carousel-inner mobile" role="listbox">
+			<div class="item active"><!-- 页面图片组件，可添加与按钮数量相应的图片组件，复制后去掉class内的 active 字样 -->
+				<div class="img-logo-www">
+					<div class="img-logo"></div>
+					<div class="img-www"></div>
+				</div>
+				<img class="pc" src="img/img1.jpg" style="width:100%"><!-- pc端图片1 -->
+				<img class="mobile" src="img/img1_1.jpg" style="width:100%"><!-- 移动端图片1 -->
+				<div class="img-box img-text">
+					<div>WORKS</div><!-- 文字div最多5行 一行文字最多不要超过26个字符 一个汉字占2个字符,标点占1个字符-->
+					<div class="text-body font-family1"><b class="font-family2">企业宣传类型</b><br />BUSINESS ADVOCACY TYPE<br /><br /><span class="font-family1">2015 / DALIAN<br />——</span></div>
+					<div><a href="javascript:void(0)" class="view listbox-btn font-family1">V I E W</a></div>
+					<div>您身边的影像专家</div>
+				</div>
+
+				
+			</div>
+			<div class="item">
+				<div class="img-logo-www">
+					<div class="img-logo"></div>
+					<div class="img-www"></div>
+				</div>
+				<img class="pc" src="img/img2.jpg" style="width:100%"><!-- pc端图片2 -->
+				<img class="mobile" src="img/img2_1.jpg" style="width:100%"><!-- 移动端图片2 -->
+				<div class="img-box img-text">
+					<div>WORKS</div><!-- 文字div最多5行 一行文字最多不要超过26个字符 一个汉字占2个字符,标点占1个字符-->
+					<div class="text-body font-family1"><b class="font-family2">企业宣传类型</b><br />BUSINESS ADVOCACY TYPE<br /><br /><span class="font-family1">2015 / DALIAN<br />——</span></div>
+					<div><a href="javascript:void(0)" class="view listbox-btn font-family1">V I E W</a></div>
+					<div style="letter-spacing:4px;">您身边的影像专家</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="img-logo-www">
+					<div class="img-logo"></div>
+					<div class="img-www"></div>
+				</div>
+				<img class="pc" src="img/img3.jpg" style="width:100%"><!-- pc端图片3 -->
+				<img class="mobile" src="img/img3_1.jpg" style="width:100%"><!-- 移动端图片3 -->
+				<div class="img-box img-text">
+					<div>WORKS</div><!-- 文字div最多5行 一行文字最多不要超过26个字符 一个汉字占2个字符,标点占1个字符-->
+					<div class="text-body font-family1"><b class="font-family2">产品展示类型</b><br />PRODUCT DISPLAY<br /><br /><span class="font-family1">2014 / DALIAN<br />——</span></div>
+					<div><a href="javascript:void(0)" class="view listbox-btn font-family1">V I E W</a></div>
+					<div style="letter-spacing:4px;">您身边的影像专家</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="img-logo-www">
+					<div class="img-logo"></div>
+					<div class="img-www"></div>
+				</div>
+				<img class="pc" src="img/img4.jpg" style="width:100%"><!-- pc端图片4 -->
+				<img class="mobile" src="img/img4_1.jpg" style="width:100%"><!-- 移动端图片4 -->
+				<div class="img-box img-text">
+					<div>WORKS</div><!-- 文字div最多5行 一行文字最多不要超过26个字符 一个汉字占2个字符,标点占1个字符-->
+					<div class="text-body font-family1"><b class="font-family2">动画演绎</b><br />ANIMATION DEDUCTION<br /><br /><span class="font-family1">2014 / DALIAN<br />——</span></div>
+					<div><a href="javascript:void(0)" class="view listbox-btn font-family1">V I E W</a></div>
+					<div style="letter-spacing:4px;">您身边的影像专家</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="img-logo-www">
+					<div class="img-logo"></div>
+					<div class="img-www"></div>
+				</div>
+				<img class="pc" src="img/img5.jpg" style="width:100%"><!-- pc端图片5 -->
+				<img class="mobile" src="img/img5_1.jpg" style="width:100%"><!-- 移动端图片5 -->
+				<div class="img-box img-text">
+					<div>WORKS</div><!-- 文字div最多5行 一行文字最多不要超过26个字符 一个汉字占2个字符,标点占1个字符-->
+					<div class="text-body font-family1"><b class="font-family2">观看更多作品</b><br />SEE MORE WORKS<br /><br /><span class="font-family1">2013 / DALIAN<br />——</span></div>
+					<div><a href="http://i.youku.com/shiguangtuteng"  target="_blank" class="listbox-btn font-family1">M O R E</a></div>
+					<div style="letter-spacing:4px;">您身边的影像专家</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 左右按钮 -->
+		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<span class="btn-box glyphicon glyphicon-menu-left"></span>
+		</a>
+		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<span class="btn-box glyphicon glyphicon-menu-right"></span>
+		</a>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+	</div>
+</div>
+
+<div class="content-list space-bottom" id="tab3">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="list-logo">
+					
+				</div>
+				<div class="mobile-logo">
+					
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 text-center">
+				<h1 class="h1 font-family2">业务项目</h1>
+				<h3 class="title-des font-family4">What we do</h3>
+			</div>
+		</div>
+	
+		<div class="row business" style="margin-top:0;">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="can-1">
+					<div class="list-img">
+						<img src="img/list-img1.jpg">
+						<span class="font-family2">利用独特创作思维和技术手法，突出体现品牌特性和产品内涵。</span>
+					</div>
+					<h2 class="h2 text-right font-family2">创意广告<br /><span>Creative Advertising</span></h2>
+				</div>
+			</div>
+
+			<div class="col-md-8 col-md-offset-2">
+				<div class="can-2">
+					<div class="list-img">
+						<img src="img/list-img2.jpg">
+						<span class="font-family2">凭借全方位的影音配合进行表现和解析，对宣传主题予以多角度立体化呈现。</span>
+					</div> 
+					<h2 class="h2 font-family2">形象宣传<br /><span>Image promotion</span></h2>
+				</div>
+					
+			</div>
+
+			<div class="col-md-8 col-md-offset-2">
+				<div class="can-3">
+					<div class="list-img">
+						<img src="img/list-img3.jpg">
+						<span class="font-family2">运用专业技术，还原事件及活动的真实影音过程。</span>
+					</div>
+					<h2 class="h2 text-right font-family2">纪实跟拍<br /><span>Documentary with the film</span></h2>
+				</div>
+					
+			</div>
+
+			<div class="col-md-8 col-md-offset-2">
+				<div class="can-4">
+					<div class="list-img">
+						<img src="img/list-img4.jpg">
+						<span class="font-family2">根据具象的推广渠道和宣传策略，制订富有差异化的影音营销物料的专属服务。</span>
+					</div>
+					<h2 class="h2 text-left font-family2">品牌定制<br /><span>Brand customization</span></h2>
+				</div>
+					
+			</div>
+		</div>
+	</div>
+</div>
+<div class="service-process space-bottom">
+	<div class="container">
+		<div class="row">
+			<div class="process-1 col-md-8 col-md-offset-2">
+				<div class="service">
+					<h4 class="h4 font-family2">
+						服务流程<br />
+						<span class="font-family4">Service Process</span>
+					</h4>
+					<p class="font-family2">意向沟通——根据客户内容需求及播放渠道等实际情况，进行专业化评估考量，提供切实可行的影音效果建议。</p>
+					<span class="right font-family4">I</span>
+				</div>
+				
+			</div>
+		
+			<div class="process-2 col-md-8 col-md-offset-2">
+				<div class="service">
+					<p class="font-family2">方案敲定——凭借双方的具体交流细则，进行相应的摄制计划和执行方案。</p>
+					<span class="left font-family4">II</span>
+				</div>
+				
+			</div>
+		
+			<div class="process-3 col-md-8 col-md-offset-2">
+				<div class="service">
+					<p class="font-family2">合同签署——依据策划脚本签订协议与合同。</p>
+					<span class="right font-family4">III</span>
+				</div>
+				
+			</div>
+		
+			<div class="process-4 col-md-8 col-md-offset-2">
+				<div class="service">
+					<p class="font-family2">摄制执行——根据前期筹划的方案进行拍摄和制作。</p>
+					<span class="left font-family4">IV</span>
+				</div>
+				
+			</div>
+		
+			<div class="process-5 col-md-8 col-md-offset-2">
+				<div class="service">
+					<p class="font-family2">维护保障——接收客户对项目成片提出的修改意见，并予以相应修改完善。</p>
+					<span class="right font-family4">V</span>
+				</div>
+				
+			</div>
+		
+			<div class="process-6 col-md-8 col-md-offset-2">
+				<div class="service">
+					<p class="font-family2">成品验收——完成项目成品的交付及后续的跟踪服务。</p>
+					<span class="left font-family4">VI</span>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="client space-bottom" id="tab4">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="client-logo margin-center"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="client-title margin-center text-align-center">客&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;户<br />CLIENT</div>
+			</div>
+		</div>
+		<div class="row client-logo-s" style="margin-top:0;"><!-- 客户logo组，若要替换可更改index.css文件中 client-img1（2345567）内background数值 在index.css内第386行 -->
+			<div class="col-sm-6 col-md-4 col-lg-3"><a class="client-img client-img1 margin-center" href=""></a></div>
+			<div class="col-sm-6 col-md-4 col-lg-3"><a class="client-img client-img2 margin-center" href=""></a></div>
+			<div class="col-sm-6 col-md-4 col-lg-3"><a class="client-img client-img3 margin-center" href=""></a></div>
+			<div class="col-sm-6 col-md-4 col-lg-3"><a class="client-img client-img4 margin-center" href=""></a></div>
+			<div class="col-sm-6 col-md-4 col-lg-3"><a class="client-img client-img5 margin-center" href=""></a></div>
+			<div class="col-sm-6 col-md-4 col-lg-3"><a class="client-img client-img6 margin-center" href=""></a></div>
+			<div class="col-sm-6 col-md-4 col-lg-3"><a class="client-img client-img7 margin-center" href=""></a></div>
+			<div class="col-sm-6 col-md-4 col-lg-3"><a class="client-img client-img8 margin-center" href=""></a></div>
+			<div class="col-sm-6 col-md-4 col-lg-3"><a class="client-img client-img9 margin-center" href=""></a></div>
+			<div class="col-sm-6 col-md-4 col-lg-3"><a class="client-img client-img10 margin-center" href=""></a></div>
+			<div class="col-sm-6 col-md-4 col-lg-3"><a class="client-img client-img11 margin-center" href=""></a></div>
+			<div class="col-sm-6 col-md-4 col-lg-3"><a class="client-img client-img12 margin-center" href=""></a></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="com-name font-family2">大连时光图腾文化传媒有限公司<br /><span>Dalian time totem culture media co.,Ltd.</span></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="info" id="tab5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="client-logo margin-center"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<table class="table margin-center">
+					<tbody>
+						<tr>
+							<td style="width:30%;"></td>
+							<td class="info-title" style="width:60%;">COMPANY</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<table class="table margin-center">
+					<tbody>
+						<tr>
+							<td style="width:30%;">Address</td>
+							<td style="width:60%;">大连市高新园区火炬路32号创业大厦A座707室</td>
+						</tr>
+						<tr>
+							<td>E-mail</td>
+							<td>234198599@qq.com</td>
+						</tr>
+						<tr>
+							<td>Tel</td>
+							<td>135-9119-0662</td>
+						</tr>
+						<tr>
+							<td>Weibo</td>
+							<td>@时光图腾工作室</td>
+						</tr>
+						<tr>
+							<td>Wechat 公共平台<br /><br /></td>
+							<td>大连时光图腾文化传媒有限公司<br />辽ICP备15016502号</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<table class="table margin-center">
+					<tbody>
+						<tr>
+							<td style="width:30%;"></td>
+							<td class="info-title" style="width:60%;">INTRODUCTION</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<table class="table margin-center">
+					<tbody>
+						<tr>
+							<td style="width:30%;"></td>
+							<td style="width:60%;">T&T影视工作室全称为时光图腾文化传媒有限公司，一直致力于为客户提供最专业的影像制作技术和最前沿的视觉传达理念，为客户提供最富性价比的影像视觉产品。</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="com-name font-family2">大连时光图腾文化传媒有限公司<br /><span>Dalian time totem culture media co.,Ltd.</span></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="video-bg"></div>
+</body>
+</html>
+
+
