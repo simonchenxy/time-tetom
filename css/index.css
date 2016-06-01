@@ -1,17 +1,3 @@
-
-
-@font-face { 
-  font-family: '华文细黑'; 
-  src: url(../fonts/hua-wen-xi-hei.ttf);
-} 
-@font-face { 
-  font-family: '方正宋一繁体'; 
-  src: url(../fonts/fang-song-fan.ttf);
-} 
-@font-face { 
-  font-family: '方正宋一简体'; 
-  src: url(../fonts/fang-song-jian.ttf);
-} 
 @font-face { 
   font-family: 'Didot-HTF-L42-Light-Ital';
   src: url(../fonts/Didot-HTF-L42-Light-Ital.otf);
